@@ -21,7 +21,7 @@ const DataBody = () => {
           context.developerState.filteredUsers.map(({ login, name, picture, phone, email, dob }) => {
             return (
               <tr key={login.uuid}>
-                <td data-th="Image" className="align-middle">
+                <td data-th="Image" className=" image-cell align-middle">
                   <img
                     src={picture.medium}
                     alt={"profile image for " + name.first + " " + name.last}
@@ -34,7 +34,7 @@ const DataBody = () => {
                 <td data-th="Phone" className="align-middle">
                   {phone}
                 </td>
-                <td data-th="Email" className="align-middle">
+                <td data-th="Email" className="email-cell align-middle">
                   <a href={"mailto:" + email} target="__blank">
                     {email}
                   </a>
